@@ -52,6 +52,24 @@
         width: 100%;
         height: auto;
       }
+
+      .ticket-number {
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .ticket-number:first-of-type {
+        padding-top: 1.6rem;
+      }
+
+      .ticket-number:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      .ticket-number:last-child {
+        margin-bottom: 0;
+        padding-bottom: 1.6rem;
+      }
     </style>
   </head>
   <body style="margin: 0; padding: 0; background-color: #fff">
@@ -105,16 +123,8 @@
 
         <tr>
           <td align="center" valign="top">
-            <p
-              style="
-                margin: 0;
-                padding: 16px 0;
-                font-size: 22px;
-                font-weight: 700;
-              "
-            >
-              XXXX-XXXX-XXXXXXXX
-            </p>
+            <p class="ticket-number">XXXX-XXXX-XXXXXXXX</p>
+            <p class="ticket-number">XXXX-XXXX-XXXXXXXX</p>
           </td>
         </tr>
 
@@ -160,7 +170,7 @@
                 t.me/CFBSI
               </a>
               &amp; <a href="mailto:info@enbsi.com">info@enbsi.com</a>
-              for the further information.
+              for further information.
             </p>
 
             <p>Enjoy the event!</p>
